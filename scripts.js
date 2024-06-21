@@ -252,3 +252,17 @@ console.log(myarrowfunction(2, 5))
 const mysimplearrowfuntion = (a, b) => a + b
 
 console.log(mysimplearrowfuntion(7, 10))
+
+// Classes 
+
+class Product {
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+}
+
+const socks = new Product('meias brancas', 12.70)
+
+console.log(socks.name)
+console.log(socks.price)
