@@ -302,3 +302,45 @@ console.log(tenis.size)
 console.log(tenis.showadjective('Lindo'))
 
 superproduct.sayhello()
+
+// DOM - Document Object Model
+// Seleção de elementos
+const title = document.getElementById('title') // #title
+
+console.log(title)
+
+// query selector 
+const sametitle = document.querySelector('#title')
+
+console.log(sametitle)
+
+const texts = document.querySelectorAll('.text')
+
+console.log(texts)
+console.log(texts[1])
+
+texts.forEach((text) =>{
+    console.log(text.textContent.toUpperCase())
+})
+
+// Manipulação de elementos
+
+title.textContent = 'Mudei o texto'
+
+texts[0].innerHTML = '<span>Alteramos o HTML deste elemento</span>'
+
+texts[1].style.backgroundColor = 'pink' // background-color: red
+
+texts[2].classList.add('my-class')
+
+texts[2].classList.remove('text')
+
+texts[3].remove()
+
+// Eventos
+
+const btn = document.querySelector('#btn')
+
+btn.addEventListener('click', function(){
+    texts[2].style.color = 'blue'
+})
