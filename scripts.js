@@ -218,3 +218,26 @@ const sumall = [10, 20, 30, 40, 50]. reduce(function (total, number){
 })
 
 console.log(sumall)
+
+// Funções
+function minhafunção(){
+    console.log('Olá função')
+}
+
+minhafunção()
+
+function nomecompleto(nome, sobrenome){
+    return `O nome completo é: ${nome} ${sobrenome}`
+}
+
+console.log(nomecompleto('Gustavo', 'Bañares'))
+console.log(nomecompleto('Guilherme', 'Santos' ))
+
+const primeironome = 'Danilo'
+const segundonome = 'Silva'
+
+const meunomecompleto = nomecompleto(primeironome, segundonome)
+
+console.log(meunomecompleto)
+
+
