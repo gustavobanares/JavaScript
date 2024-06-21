@@ -260,9 +260,18 @@ class Product {
         this.name = name
         this.price = price
     }
+
+    productDetails() {
+        return `O nome do produto é ${this.name} e o preço é R$${this.price}`
+    }
 }
 
 const socks = new Product('meias brancas', 12.70)
+const shirt = new Product('Camisa Preta', 30.70)
 
 console.log(socks.name)
 console.log(socks.price)
+
+console.log(shirt.name)
+
+console.log(shirt.productDetails())
