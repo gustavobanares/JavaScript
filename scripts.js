@@ -188,4 +188,33 @@ for (let counter = 0; counter < mysecondlist.length; counter++){
  console.log(`Imprimindo: ${mysecondlist[counter]}`) //template literals
 }
 
+// métodos de array -> repetição
 
+const names =  ['Gustavo', 'Guilherme', 'Bruno', 'Danilo']
+
+names.forEach(function (name){
+    console.log(`O nome é: ${name}`)
+})
+
+const modifiednames = names.map(function (name){
+    if( name === 'Gustavo'){
+        return (name = 'Sr. Gustavo')
+    } else {
+        return name
+    }
+        
+})
+
+console.log (modifiednames)
+
+const bignumbers = [1, 2, 3, 4, 5, 10, 100].filter(function (number){
+    return number >= 5
+})
+
+console.log(bignumbers)
+
+const sumall = [10, 20, 30, 40, 50]. reduce(function (total, number){
+    return total + number
+})
+
+console.log(sumall)
