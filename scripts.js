@@ -241,3 +241,14 @@ const meunomecompleto = nomecompleto(primeironome, segundonome)
 console.log(meunomecompleto)
 
 
+// arrow functions
+
+const myarrowfunction = (a, b) => {
+    return a + b
+}
+
+console.log(myarrowfunction(2, 5))
+
+const mysimplearrowfuntion = (a, b) => a + b
+
+console.log(mysimplearrowfuntion(7, 10))
