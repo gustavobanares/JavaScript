@@ -114,3 +114,14 @@ console.log(product.name)
 
 console.log(product['main color'])
 
+// destructuring
+
+const {price, instock} = product
+
+console.log(price)
+console.log(instock)
+
+const[n1, n2] = list
+
+console.log(n1)
+console.log(n2)
