@@ -171,3 +171,21 @@ const somenumber = 2
 let testinganumber = somenumber < 20 ? 'Yes' : 'No'
 
 console.log(testinganumber)
+
+// estruturas de repetição - loop
+const mylist = [1, 2, 3, 4, 5]
+let counter = 0
+
+while(counter < mylist.length){
+    console.log('Imprimindo: ' + mylist[counter])
+    //counter = counter + 1
+    counter++
+}
+
+const mysecondlist = ['a', 'b', 'c', 'd', 'e']
+
+for (let counter = 0; counter < mysecondlist.length; counter++){
+ console.log(`Imprimindo: ${mysecondlist[counter]}`) //template literals
+}
+
+
