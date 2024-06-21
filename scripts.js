@@ -125,3 +125,23 @@ const[n1, n2] = list
 
 console.log(n1)
 console.log(n2)
+
+// JSON - JavaScrpit Object Notation 
+
+const dog = {
+    name: 'Bruce',
+    age:'7',
+}
+
+const json = JSON.stringify(dog)
+console.log(json)
+
+const obj = JSON.parse(json)
+
+console.log(obj)
+
+const jsonerrado = '{"name":"teste", "surname":"testando"}'
+
+const obj2 = JSON.parse(jsonerrado)
+
+console.log(obj2)
