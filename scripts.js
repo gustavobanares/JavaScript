@@ -145,3 +145,29 @@ const jsonerrado = '{"name":"teste", "surname":"testando"}'
 const obj2 = JSON.parse(jsonerrado)
 
 console.log(obj2)
+
+// Estruturas condicionais (if and else)
+const a = 10
+
+if(a > 8){
+    console.log('A é maior que 8')
+}
+
+// >, <, >=, <=
+
+const b = 'Gustavo'
+
+if(b === 'Guilherme'){
+    console.log('O nome é Guilherme')
+}else if (b === 'Bruno'){
+    console.log('O nome é Bruno')
+} else{
+    console.log('Não temos esse nome de usuário')
+}
+
+const somenumber = 2
+
+//if ternário 
+let testinganumber = somenumber < 20 ? 'Yes' : 'No'
+
+console.log(testinganumber)
