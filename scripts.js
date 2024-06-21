@@ -275,3 +275,30 @@ console.log(socks.price)
 console.log(shirt.name)
 
 console.log(shirt.productDetails())
+
+// herança
+
+class superproduct extends Product {
+    constructor(name, price, size){
+        super(name, price)
+        this.size = size
+    }
+
+    showadjective(adjective){
+        return `O ${this.name} é muito ${adjective}`
+    }
+
+    // static
+    static sayhello(){
+        console.log('Hello')
+    }
+}
+
+const tenis = new superproduct('Tênis vermelho', 70.7, '40')
+
+console.log(tenis.name)
+console.log(tenis.size)
+
+console.log(tenis.showadjective('Lindo'))
+
+superproduct.sayhello()
