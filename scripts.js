@@ -99,3 +99,18 @@ console.log(list)
 list.unshift('a')
 
 console.log(list)
+
+// objetos 
+
+const product = {
+    name:'camisa',
+    price:20,
+    instock:true,
+    sizes:['P', 'M', 'G'],
+    'main color': 'blue',
+}
+
+console.log(product.name)
+
+console.log(product['main color'])
+
