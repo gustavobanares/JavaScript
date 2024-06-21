@@ -70,3 +70,32 @@ console.log(fullname.indexOf('Bañares'))
 console.log('fhkhffh'.indexOf('Bañares'))
 
 console.log(fullname.slice(0, 7))
+
+// metódos de array
+const list = ['a', 'b', 'c','d','e']
+
+console.log(list.length)
+
+console.log(list[2])
+
+list[5] = 'f'
+
+console.log(list)
+
+console.log(list[list.length - 1])
+
+list.push('g')
+
+console.log(list)
+
+list.pop()
+
+console.log(list)
+
+list.shift()
+
+console.log(list)
+
+list.unshift('a')
+
+console.log(list)
