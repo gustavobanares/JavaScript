@@ -45,3 +45,28 @@ console.log(typeof surname)
 surname = 'Bañares'
 console.log(surname)
 console.log(typeof surname)
+
+let age
+console.log(age)
+console.log(typeof age)
+
+age = 20
+console.log(age)
+console.log(typeof age)
+
+// metódos de String 
+const fullname = ('Gustavo Bañares')
+
+console.log(fullname.length)
+
+const stringtoArray = fullname.split(' ')
+
+console.log(stringtoArray)
+
+console.log(fullname.toUpperCase())
+
+console.log(fullname.indexOf('Bañares'))
+
+console.log('fhkhffh'.indexOf('Bañares'))
+
+console.log(fullname.slice(0, 7))
