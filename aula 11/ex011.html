@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+   Digite qual pais voce nasceu: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+   
+
+    <script>
+       
+       function calcular() {
+        var txtn = window.document.getElementById('txtnac')
+        var res = window.document.getElementById('res')
+        var pais = (txtn.value)
+
+        if (pais == 'Brasil', 'brasil', 'br') {
+            res.innerHTML = `<p>Você é brasileiro</p>`
+        } else {
+            res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+            res.innerHTML += `<p>Isso porque você nasceu em ${pais}</p>`
+        }
+       
+
+    </script>
+    
+</body>
+</html>
