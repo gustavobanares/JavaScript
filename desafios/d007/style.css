@@ -1,0 +1,13 @@
+body{
+    background-color: greenyellow;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+}
+
+
+div#res{
+    margin-top: 20px;
+}
